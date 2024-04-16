@@ -1,4 +1,4 @@
-# Project Title
+# Service Checker
 
 This is a Go-based project that performs server checks and logs the results. It uses the Go standard library, and the project dependencies are managed using `go.mod`.
 
