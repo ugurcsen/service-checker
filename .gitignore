@@ -1,0 +1,70 @@
+`.gitignore` dosyasını tamamlamak için, Go projeleri için yaygın olarak kullanılan bazı öğeleri ekleyebiliriz. Bu öğeler genellikle derleme çıktıları, sistem dosyaları ve IDE/Editor özel dosyalarını içerir. İşte bir örnek:
+
+```gitignore
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+service-checker
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.s
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+# IDE/Editor folders
+.idea
+.vscode
+*.swp
+*.swo
+*.swn
+*.swm
+*.swo
+
+# Log files
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# OSX folder attribute
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# End of https://www.gitignore.io/api/go
+```

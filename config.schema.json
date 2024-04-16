@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Namespaces": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "Port": { "type": "integer" },
+          "Protocol": { "type": "string" },
+          "Link": { "type": "string" },
+          "SSRCheck": { "type": "boolean", "default": false },
+          "SSRThreshold": { "type": "integer", "default": 0 }
+        },
+        "required": ["Port", "Protocol", "Link"]
+      }
+    },
+    "OpenSearch": {
+      "type": "object",
+      "properties": {
+        "Hosts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "Index": { "type": "string" },
+        "Username": { "type": "string" },
+        "Password": { "type": "string" }
+      }
+    },
+    "Hosts": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["Namespaces", "Hosts"]
+}
